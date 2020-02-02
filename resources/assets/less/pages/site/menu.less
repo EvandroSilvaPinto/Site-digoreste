@@ -1,0 +1,139 @@
+@import "../../core/core.less";
+@import "modules/header.less";
+@import "modules/footer.less";
+
+
+section#menu {
+    height: 1200px;
+
+    @media (max-width: 480px) {
+        height: 770px;
+    }
+
+    .menu {
+        .title {
+            color         : #972222;
+            text-align    : center;
+            padding-bottom: 30px;
+
+            @media (max-width: 480px) {
+                padding-bottom: 15px;
+            }
+        }
+
+        .navbar {
+            ul {
+                list-style: none;
+                text-align: center;
+
+                li {
+                    float  : left;
+                    height : 40px;
+                    padding: 0 53px;
+                    width  : 25%;
+
+                    @media (max-width: 1024px) {
+                        padding: 0 14px;
+                    }
+
+                    @media (max-width:480px) {
+                        padding: 0;
+                    }
+
+                    input {
+                        display: none;
+                    }
+
+                    a {
+                        background     : #972222;
+                        padding        : 20px 50px;
+                        color          : #fff;
+                        border-radius  : 6px;
+                        font-size      : 25px;
+                        text-decoration: none;
+                        cursor         : pointer;
+
+                        @media (max-width: 768px) {
+                            padding: 20px;
+                        }
+
+                        @media (max-width: 480px) {
+                            padding  : 12px;
+                            font-size: 16px;
+                        }
+
+                        &:hover {
+                            background: #611515;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rd_tabs:checked~label {
+            a {
+                background: #611515;
+            }
+        }
+
+        .rd_tabs:checked~.subcategory {
+            display: block;
+        }
+
+        .subcategory {
+            display   : none;
+            position  : absolute;
+            height    : 320px;
+            width     : 100%;
+            left      : 0;
+            text-align: left;
+            margin-top: 90px;
+
+            @media (max-width: 768px) {
+                margin-top: 60px;
+            }
+
+            .img {
+                text-align: center;
+
+                img {
+                    border-radius: 10px;
+                    width        : 341px;
+                    height       : auto;
+                }
+            }
+
+            .nome {
+                h3 {
+                    color       : #972222;
+                    padding-left: 15px;
+                }
+            }
+
+            details {
+                float  : left;
+                width  : 100%;
+                padding: 0 100px 20px;
+
+                @media (max-width: 1024px) {
+                    padding: 0 70px 20px;
+                }
+
+                @media (max-width: 768px) {
+                    padding: 0 70px;
+                }
+
+                @media (max-width: 480px) {
+                    padding: 0 60px;
+                }
+
+                summary {
+                    cursor        : pointer;
+                    color         : #972222;
+                    font-size     : 20px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}

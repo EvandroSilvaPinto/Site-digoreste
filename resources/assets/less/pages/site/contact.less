@@ -1,0 +1,73 @@
+@import "../../core/core.less";
+@import "modules/header.less";
+@import "modules/footer.less";
+
+section#contacts {
+    .contact {
+        padding-bottom: 80px;
+
+        .title {
+            padding-top: 10px;
+            text-align : center;
+
+            span {
+                color      : #972222;
+                font-size  : 35px;
+                font-weight: bold;
+            }
+        }
+
+        .form {
+            text-align : center;
+            padding-top: 35px;
+            margin     : 0 150px;
+
+            @media (max-width: 480px) {
+                margin: 0 45px;
+            }
+
+            @media (max-width: 375px) {
+                margin: 0 15px;
+            }
+
+            input,
+            textarea {
+                background : transparent;
+                border     : solid 1px #000000;
+                color      : #000000;
+                text-align : center;
+                margin     : 0 0 10px;
+                width      : 100%;
+                line-height: 3;
+                font-weight: 500;
+            }
+
+            textarea {
+                text-align: left;
+                padding   : 5px 20px 0;
+            }
+
+            button {
+                float     : right;
+                background: transparent;
+                border    : solid 1px #000000;
+                color     : #000000;
+            }
+        }
+    }
+
+    .adress {
+        text-align    : center;
+        padding-bottom: 100px;
+
+        h3 {
+            color: #972222;
+        }
+
+        a {
+            color          : #000000;
+            text-decoration: none;
+            cursor         : pointer;
+        }
+    }
+}

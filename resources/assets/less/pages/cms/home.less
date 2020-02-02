@@ -1,0 +1,162 @@
+@import "../../core/core.less";
+
+//Modules
+@import "modules/header.less";
+@import "modules/footer.less";
+@import "modules/form.less";
+@import "modules/buttons.less";
+@import "modules/panels.less";
+
+
+table { 
+	margin-bottom: 1rem;
+	width: 100%;
+	border-collapse: collapse; 
+
+  tr {
+     background: @terceary-color;
+  }
+
+  th { 
+      color: @secondary-color; 
+      font-weight: bold; 
+      font-size: 1.5rem;
+  }
+
+  td,
+  th { 
+      padding: .5rem 1rem;       
+      text-align: left; 
+  }
+
+  td {
+    font-size: 1.5rem;
+    border-top: 1px solid fade(@sixternary-color, 10); 
+    .btn-secondary {
+      padding:  .3rem .8rem;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    table {
+      border: 0;
+    }
+
+    table thead {
+      display: none;
+    }
+
+    table tr {
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    table td {
+      display: block;
+      text-align: right;
+      font-size: 13px;
+      border-bottom: 0;
+      border-bottom: 1px dotted #ccc;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+
+    table tr:nth-of-type(odd) { 
+      background: #eee; 
+    }
+
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+}
+
+.panel {
+    overflow: hidden;
+    
+
+    &.box {
+      margin: 1.5rem 0;
+    }
+
+    .panel-heading  a {
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      color: @secondary-color;
+      text-decoration: none;
+
+      &.uk-button {
+        line-height: 25px;
+      }
+    }
+
+    .panel-body {
+
+      .fa {
+        font-size: 3rem;
+        color: #b5b5b5;
+      }
+
+      .number {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      .title {
+        .reset-list;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        font-weight: 400;
+        color: #7d7c7c;
+      }
+    }
+
+    hr {
+        margin: 15px 0;
+    }
+
+    &.card-blue {
+        border-left: 5px solid @eleventernary-color;
+
+        .number,
+        .fa {
+          color: @eleventernary-color;
+        }
+    }
+
+    &.card-orange {
+        border-left: 5px solid @fiveternary-color;
+
+        .number {
+          color: @fiveternary-color;
+        }
+    }
+
+    &.card-red {
+        border-left: 5px solid @primary-color;
+
+        .number,
+        .fa {
+          color: @primary-color;
+        }
+    }
+
+    &.card-purple {
+        border-left: 5px solid @quartenary-color;
+
+        .number,
+        .fa {
+          color: @quartenary-color;
+        }
+    }
+}
+
+  

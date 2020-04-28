@@ -1036,6 +1036,7 @@ footer .social-icon {
 
 .navbar {
   min-height: 100px;
+  transition: 0.5s;
 }
 
 @media only screen and (max-width: 900px) {

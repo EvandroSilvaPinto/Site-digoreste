@@ -446,9 +446,10 @@
                          </div>
 
                          <!-- CONTACT FORM -->
-                         <form action="#" method="post" class="wow fadeInUp" id="contact-form" role="form"
+                         <form action="https://api.staticforms.xyz/submit" method="post" class="wow fadeInUp" id="contact-form" role="form"
                               data-wow-delay="0.8s">
-
+                              <input type="hidden" name="accessKey" value="ee5d0643-c5d9-42db-9c13-1c39569b3f9b"> <!-- Required -->
+                              <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
                               <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
                               <h6 class="text-success">Sua mensagem foi enviada com sucesso!</h6>
 
@@ -462,7 +463,7 @@
                               </div>
 
                               <div class="col-md-6 col-sm-6">
-                                   <input type="email" class="form-control" id="cf-email" name="email"
+                                   <input type="text" class="form-control" id="cf-email" name="email"
                                         placeholder="E-mail">
                               </div>
 

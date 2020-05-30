@@ -89,6 +89,10 @@ a:focus {
   padding-bottom: 40px;
 }
 
+.section-title p {
+  margin: 0;
+}
+
 .section-title h2 {
   margin: 0;
 }
@@ -550,6 +554,7 @@ section {
 
 #menu {
   padding-bottom: 0;
+  margin-bottom: 5em;
 }
 
 #menu .container {
@@ -583,18 +588,18 @@ section {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  text-align: left;
+  text-align: center;
   padding: 25px 30px;
   transition: 0.5s 0.2s;
 }
-
+/*
 .menu-info .menu-item {
   float: left;
 }
 
 .menu-info .menu-price {
   float: right;
-}
+}*/
 
 .menu-info .menu-price span {
   font-size: 20px;
